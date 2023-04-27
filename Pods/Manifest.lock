@@ -1,0 +1,20 @@
+PODS:
+  - FMPhotoPicker (1.3.0)
+  - KeychainAccess (4.2.2)
+
+DEPENDENCIES:
+  - FMPhotoPicker (~> 1.3.0)
+  - KeychainAccess
+
+SPEC REPOS:
+  trunk:
+    - FMPhotoPicker
+    - KeychainAccess
+
+SPEC CHECKSUMS:
+  FMPhotoPicker: 954d3c3e72521baffecdc23422ae149fdde3cd63
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+
+PODFILE CHECKSUM: 681f69d7d59a8e7a412c0a9955a099d6348dc786
+
+COCOAPODS: 1.12.0

@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049EF691686A610720880A4449794C3F /* FMFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4722B53C5C5010161B64E23855023CC0 /* FMFilterCell.swift */; };
+		0580BF80EF80F416C51AF44279B7E1B2 /* FMImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572734D53D29D0AFE499830F92258B16 /* FMImageViewController.swift */; };
+		128150C61101699688369C5FC7995174 /* AVPlayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42E2E273BA5C1D49E439379B7EFFC2 /* AVPlayer+Extension.swift */; };
+		18A01103FE4A496D52DEBFB77AF49222 /* FMFiltersMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6570FEB29F99F34DBEE38361116420 /* FMFiltersMenuView.swift */; };
+		1FC47519C8DC62E4894766EDBAB80233 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C56835612BAE58CBFE41A4E10AEB7 /* UIImage+Extension.swift */; };
+		201256ED1F0E6930AB16281BE733789C /* FMCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BD4007AA9719C522F460D0B4949053 /* FMCrop.swift */; };
+		25248F676DDC5CABEBDCC2AE9614E1D7 /* FMCropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D29E0EC18855610F339DD687078146 /* FMCropScrollView.swift */; };
+		2962CD83FAC5B77C0C8EDE08F5BB6DC2 /* FMPhotoPickerImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30748B603C41ED6206F5B262E616357 /* FMPhotoPickerImageCollectionViewCell.swift */; };
+		29AF00A8343345FF0D9848BD1A640BF2 /* FMCropTranslucencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16590965665F48F49B4390087672CBDC /* FMCropTranslucencyView.swift */; };
+		2C9022F02292EA5FB21AB5FFC27D05F8 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE49FB5FFF5F2AB49AB13712971F06CA /* Keychain.swift */; };
+		31752D9AF32D77C03D660AFC97059EC2 /* FMFilterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6436BA2373EF55B539A3F80D2EB254D /* FMFilterable.swift */; };
+		320BB1B9C15377130EDB16845EC99F4C /* FMPhotoPickerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42F2099AD218A025CC30A24DBB464A /* FMPhotoPickerConfig.swift */; };
+		32FF0FD61F9B7A9DEAC6F9EEF27C322D /* FMAlertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6EC06A8A2CD7B9A3B7D919BA56FD1 /* FMAlertable.swift */; };
+		333B6115B96F7F26D3B10C1BC07B18FC /* FMImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE59E326FA952E572E1E180D67FA496 /* FMImageEditor.swift */; };
+		3B11BA026ED0CBC4743F457C2F5C3115 /* FMPhotoPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F681B7F421066FFAB8E819F17B1FA87 /* FMPhotoPicker-dummy.m */; };
+		41158F5988CA671AD8D054B9D7552E9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		42A8695EE5F3F450FE2E46B305061B55 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB4C06FF18AFB0D3ECE1C3D4399142 /* Helper.swift */; };
+		4425F9C4B331B1A59613C18A89B44486 /* FMWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A4E7540EEC95E2C530ECB099426C7 /* FMWarningView.swift */; };
+		45EADF64219574AFD0EFD30FB6B59109 /* FMPhotoInteractionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3F355756E135592DB076ECC773DDA /* FMPhotoInteractionAnimator.swift */; };
+		4EE4CDE6852B689841911947793C8BF8 /* UIView+FMPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BABAE3FF78F4F3E2D72462038430B72 /* UIView+FMPhotoView.swift */; };
+		577B82C85AB5529E04783412845065DA /* FMPhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0AFBEF6C560E4AEFD7F2E1E4B1451 /* FMPhotoPickerViewController.swift */; };
+		5B6502A449107D12CA9CEE71E16C5D7F /* FMCropCropBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB46EE672A2B0FA02E1041CC6F9802BC /* FMCropCropBoxView.swift */; };
+		5DEE4BF3246ED0DFC7840CE7F5956FA0 /* Pods-FileManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B1BB47A9089B67937B7CF87CCEE020 /* Pods-FileManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6126FB00D158C94A59B03EBD32F4218B /* FMPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E237C4DA245217C0055A0DBD2E5F94 /* FMPhotoViewController.swift */; };
+		65B18EB9134E157198E42F753830233C /* FMZoomInAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFA57CE3ED06FF46D2BF9CAD0CD8119 /* FMZoomInAnimationController.swift */; };
+		6C6A493C61082B57C868981C0876A7BB /* FMPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4D8F12EF5D3CEF41C2D04809FA173 /* FMPhotosDataSource.swift */; };
+		70E674AF6C82C2A58C5560C63C9F881E /* FMPhotoPickerImageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89910FDC58E7E3D6582FA663F49607 /* FMPhotoPickerImageCollectionViewLayout.swift */; };
+		741685FABDDEAAE9EF2AD3C8EEFE3FDA /* InsertableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22476129D7EC51EEAAA12A52B112053 /* InsertableUIView.swift */; };
+		7A21D0BB27C4B9EF5B36DBC56AFF4630 /* FMLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB72738389032F38DE5BEEA66EC379 /* FMLoadingView.swift */; };
+		7D7FE84B503FC580FD0E6AD58040F5F5 /* FMCroppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E7C790C24A248F93C727C61208D944 /* FMCroppable.swift */; };
+		80B08DD213185798B65810D2A655CC73 /* FMPhotoPickerBatchSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532CD2D29038FECD5A9447F95E1613A /* FMPhotoPickerBatchSelector.swift */; };
+		84305DE56BEF0EC2A8817C9D721504B5 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E363C1016A17966A96BD4180638B92 /* UIImage+Extensions.swift */; };
+		878B3F9C99B5F69A4B3AE76805DFC68C /* FMCropCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0AC38836AE51B3AC95EBB25A7454A /* FMCropCell.swift */; };
+		8A923BF8115D4524B84CAE09454C6918 /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2D1C136C53D8EBF6C22355E31395F /* TimeInterval+Extension.swift */; };
+		8D50ABC244D9E77AE3BF8CA5D7DD7A48 /* FMVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D039A1103EB0EDFC2628402ECE1D09 /* FMVideoViewController.swift */; };
+		8DC38303545FE44C248AF573EE736EDE /* FMPresenterBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77667F98F31180092346396373444C65 /* FMPresenterBottomView.swift */; };
+		93759C3C6AF9B322BEAC166695E9C9AA /* FMCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30BEA6DEC2A7627FFE84CDA0B02BD9 /* FMCropView.swift */; };
+		9673D377C09BBED57B6DC1E68516AD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD8F59EA94C7187A57F65C031AB025 /* Assets.xcassets */; };
+		96DC97F713048D3954A0972426EA8874 /* FMPlaybackProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF460BE3EC4C133B579DCAADE66060 /* FMPlaybackProgressView.swift */; };
+		99524B5B6A90853F65F244E5F77E22A6 /* FMScalingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EA52B9111191CBF2EF4CEBE7133F29 /* FMScalingImageView.swift */; };
+		9FCF9D8321BD0CC5A6FFBC3914A73145 /* FMPresenterEditMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951966F1109D15673F68C83480C2C7D0 /* FMPresenterEditMenuView.swift */; };
+		AC55B69C9A9D727F41B072568763BCB1 /* FMPlaybackProgressThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D755973C1BD886804B796AF16C47D9 /* FMPlaybackProgressThumbLayer.swift */; };
+		ADC2756DAE837D4AB7B1F71C34803863 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AE13D3FA75FDFB448DD60361E8EDD711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B04A141C3537B2D3F46201565B2C2BDD /* FMCropMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338CA8A523DEDB495461879A322A0ADA /* FMCropMenuView.swift */; };
+		B29AF96DC4317B96E0EB7B63C2750146 /* Pods-FileManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A06A0B3B2EDD0EFD87DA822EDDFD9686 /* Pods-FileManager-dummy.m */; };
+		BC144D8C82C44C5F76897F9F639D2E33 /* FMPlaybackControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E141C31C595BA169E3A7BF89E32D6F /* FMPlaybackControlView.swift */; };
+		BF90BFF34BBAD8B2C7A6CE9641145561 /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F3EDEAE705F9C34D52D70D5225F8CF /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2183D4E04C8CEDA3B4E9854116E2E8C /* FMFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D2DB37F7025287F217649F73D6233 /* FMFilter.swift */; };
+		CC4D406DED6919789300B604A7E348F1 /* FMPhotoPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A3AD2498C47387FFD7C77EEB7DCC36 /* FMPhotoPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC8B3D9093C338E499552B028C8D6469 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E565A337D0C170B62B90EC97E4CCE /* Bundle+Extension.swift */; };
+		D04C109BB8F94A538438A52D7B20E66A /* FMPresenterTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0438C4DBD1941D91FF9ED89CF82DC /* FMPresenterTopView.swift */; };
+		D1AE817E5C376D41D67416C224EF90C8 /* FMCropForegroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE8B6213E29F3ADFDD2C44CECBC0DE /* FMCropForegroundView.swift */; };
+		D21ED1DDE18FE3FEBD85691816907C91 /* FMCropBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6501E3D52227CC2AA0947737D5B3F /* FMCropBackgroundView.swift */; };
+		D882C3F4050C6D1B88E746DE646CB905 /* FMPlaybackProgressTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DFFA8A2A0DC29E07CF2F0776B166B /* FMPlaybackProgressTrackLayer.swift */; };
+		D98382557B4F6E46F0F8B39496D89A9B /* FMPhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD12A1FB0AF3D690C791CCC8C738325 /* FMPhotoAsset.swift */; };
+		E0D1F0AC5B5E73CE44C1116F86C2015B /* FMCropCropBoxCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA6633A3E78B125FB63B0321365D1E /* FMCropCropBoxCornersView.swift */; };
+		E617930E652445A5A73D972887D93400 /* FMZoomOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD1E2BE46D9AE42EF3594CCE423CDC /* FMZoomOutAnimationController.swift */; };
+		ED8118AB217FE0637F54A94140F5BBE9 /* FMImageEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA2B9C35172F31550B5EF7FE0BD27C /* FMImageEditorViewController.swift */; };
+		EEA3892D8746DA47A2889A0717514533 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 925EEB82E8777178FD5A9694AFEA28C4 /* KeychainAccess-dummy.m */; };
+		EEAC2B49681440E5E8598D32CE596FB7 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59AF8B0804D7FE27CD6C2AB93B0181 /* Const.swift */; };
+		FB4193842C3FAC9D1422E73F4C1D3CB6 /* FMPhotoPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC9F9C2D7B5DC12280BCB2F8E8D9953 /* FMPhotoPresenterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3395CAAEE5BDF9E042F9E5D9D0ABC4B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4503BDEA9CC43AE1232C239A05C56DF5;
+			remoteInfo = FMPhotoPicker;
+		};
+		45E5517CC38017712DA3F4EAA9D4BB3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 615C831BCE925ED486B225B87E44926D;
+			remoteInfo = KeychainAccess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A6EC06A8A2CD7B9A3B7D919BA56FD1 /* FMAlertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMAlertable.swift; path = FMPhotoPicker/FMPhotoPicker/source/Utilities/FMAlertable.swift; sourceTree = "<group>"; };
+		05E141C31C595BA169E3A7BF89E32D6F /* FMPlaybackControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPlaybackControlView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Views/FMPlaybackControlView.swift; sourceTree = "<group>"; };
+		06C4012E6E42E6E6F8D7782DC7D4AB3D /* Pods-FileManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FileManager.release.xcconfig"; sourceTree = "<group>"; };
+		0ABD8F59EA94C7187A57F65C031AB025 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FMPhotoPicker/FMPhotoPicker/source/Assets.xcassets; sourceTree = "<group>"; };
+		0B4A4E7540EEC95E2C530ECB099426C7 /* FMWarningView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMWarningView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Utilities/FMWarningView.swift; sourceTree = "<group>"; };
+		0DD056EB1F1DB6A138A1C9CD823AF562 /* Pods-FileManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FileManager"; path = Pods_FileManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CB4C06FF18AFB0D3ECE1C3D4399142 /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = FMPhotoPicker/FMPhotoPicker/source/Utilities/Helper.swift; sourceTree = "<group>"; };
+		16590965665F48F49B4390087672CBDC /* FMCropTranslucencyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropTranslucencyView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/Crop/FMCropTranslucencyView.swift; sourceTree = "<group>"; };
+		16BA6633A3E78B125FB63B0321365D1E /* FMCropCropBoxCornersView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropCropBoxCornersView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/Crop/FMCropCropBoxCornersView.swift; sourceTree = "<group>"; };
+		19A3AD2498C47387FFD7C77EEB7DCC36 /* FMPhotoPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMPhotoPicker-umbrella.h"; sourceTree = "<group>"; };
+		1C59AF8B0804D7FE27CD6C2AB93B0181 /* Const.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Const.swift; path = FMPhotoPicker/FMPhotoPicker/source/Utilities/Const.swift; sourceTree = "<group>"; };
+		1F681B7F421066FFAB8E819F17B1FA87 /* FMPhotoPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMPhotoPicker-dummy.m"; sourceTree = "<group>"; };
+		20D755973C1BD886804B796AF16C47D9 /* FMPlaybackProgressThumbLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPlaybackProgressThumbLayer.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Views/Progress/FMPlaybackProgressThumbLayer.swift; sourceTree = "<group>"; };
+		24D29E0EC18855610F339DD687078146 /* FMCropScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropScrollView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/Crop/FMCropScrollView.swift; sourceTree = "<group>"; };
+		26FC926045B51E01D3D937900451ADD5 /* Pods-FileManager-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FileManager-frameworks.sh"; sourceTree = "<group>"; };
+		2BB4ADDF952E59BABEEDAEC2977E4CEA /* FMPhotoPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMPhotoPicker.release.xcconfig; sourceTree = "<group>"; };
+		2C30BEA6DEC2A7627FFE84CDA0B02BD9 /* FMCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/Crop/FMCropView.swift; sourceTree = "<group>"; };
+		2D21D8DFE258D9F0422F1CD00E39605B /* FMPhotoPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMPhotoPicker-prefix.pch"; sourceTree = "<group>"; };
+		2EEF460BE3EC4C133B579DCAADE66060 /* FMPlaybackProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPlaybackProgressView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Views/Progress/FMPlaybackProgressView.swift; sourceTree = "<group>"; };
+		338CA8A523DEDB495461879A322A0ADA /* FMCropMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropMenuView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/FMCropMenuView.swift; sourceTree = "<group>"; };
+		39ADFCE001104254F8E9CE7D17042561 /* Pods-FileManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FileManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		402B145538C2151F608B7576AA2C4FF6 /* KeychainAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.release.xcconfig; sourceTree = "<group>"; };
+		4722B53C5C5010161B64E23855023CC0 /* FMFilterCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMFilterCell.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/FMFilterCell.swift; sourceTree = "<group>"; };
+		494DB870655D9EF39C530E42D48D7FD2 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		4CEE8B6213E29F3ADFDD2C44CECBC0DE /* FMCropForegroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropForegroundView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/Crop/FMCropForegroundView.swift; sourceTree = "<group>"; };
+		4E5C66EB3748E51B5B86886C84A345D0 /* Pods-FileManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FileManager.debug.xcconfig"; sourceTree = "<group>"; };
+		51D039A1103EB0EDFC2628402ECE1D09 /* FMVideoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMVideoViewController.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Viewer/FMVideoViewController.swift; sourceTree = "<group>"; };
+		56F0AC38836AE51B3AC95EBB25A7454A /* FMCropCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropCell.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/FMCropCell.swift; sourceTree = "<group>"; };
+		572734D53D29D0AFE499830F92258B16 /* FMImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMImageViewController.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Viewer/FMImageViewController.swift; sourceTree = "<group>"; };
+		5AC9F9C2D7B5DC12280BCB2F8E8D9953 /* FMPhotoPresenterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoPresenterViewController.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/FMPhotoPresenterViewController.swift; sourceTree = "<group>"; };
+		5B42F2099AD218A025CC30A24DBB464A /* FMPhotoPickerConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoPickerConfig.swift; path = FMPhotoPicker/FMPhotoPicker/source/Utilities/FMPhotoPickerConfig.swift; sourceTree = "<group>"; };
+		5BABAE3FF78F4F3E2D72462038430B72 /* UIView+FMPhotoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+FMPhotoView.swift"; path = "FMPhotoPicker/FMPhotoPicker/source/Utilities/UIView+FMPhotoView.swift"; sourceTree = "<group>"; };
+		5DE0438C4DBD1941D91FF9ED89CF82DC /* FMPresenterTopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPresenterTopView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Views/FMPresenterTopView.swift; sourceTree = "<group>"; };
+		61662741B888CCB527291D3A2E777403 /* FMPhotoPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMPhotoPicker.debug.xcconfig; sourceTree = "<group>"; };
+		6B6DFFA8A2A0DC29E07CF2F0776B166B /* FMPlaybackProgressTrackLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPlaybackProgressTrackLayer.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Views/Progress/FMPlaybackProgressTrackLayer.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77667F98F31180092346396373444C65 /* FMPresenterBottomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPresenterBottomView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Views/FMPresenterBottomView.swift; sourceTree = "<group>"; };
+		77B21D32A590A69293A6FE22C811F4CE /* FMPhotoPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMPhotoPicker.modulemap; sourceTree = "<group>"; };
+		79D4B0088FFD458C7C65D46F47489EC7 /* Pods-FileManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FileManager.modulemap"; sourceTree = "<group>"; };
+		7BD12A1FB0AF3D690C791CCC8C738325 /* FMPhotoAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoAsset.swift; path = FMPhotoPicker/FMPhotoPicker/source/Data/FMPhotoAsset.swift; sourceTree = "<group>"; };
+		800E565A337D0C170B62B90EC97E4CCE /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "FMPhotoPicker/FMPhotoPicker/source/Utilities/Bundle+Extension.swift"; sourceTree = "<group>"; };
+		80F3EDEAE705F9C34D52D70D5225F8CF /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
+		8CE59E326FA952E572E1E180D67FA496 /* FMImageEditor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMImageEditor.swift; path = FMPhotoPicker/FMPhotoPicker/source/ImageEditor/FMImageEditor.swift; sourceTree = "<group>"; };
+		91D0AFBEF6C560E4AEFD7F2E1E4B1451 /* FMPhotoPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoPickerViewController.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Picker/FMPhotoPickerViewController.swift; sourceTree = "<group>"; };
+		925EEB82E8777178FD5A9694AFEA28C4 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		951966F1109D15673F68C83480C2C7D0 /* FMPresenterEditMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPresenterEditMenuView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Views/FMPresenterEditMenuView.swift; sourceTree = "<group>"; };
+		9B42E2E273BA5C1D49E439379B7EFFC2 /* AVPlayer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVPlayer+Extension.swift"; path = "FMPhotoPicker/FMPhotoPicker/source/Utilities/AVPlayer+Extension.swift"; sourceTree = "<group>"; };
+		9BA4D8F12EF5D3CEF41C2D04809FA173 /* FMPhotosDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotosDataSource.swift; path = FMPhotoPicker/FMPhotoPicker/source/Data/FMPhotosDataSource.swift; sourceTree = "<group>"; };
+		9D89910FDC58E7E3D6582FA663F49607 /* FMPhotoPickerImageCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoPickerImageCollectionViewLayout.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Picker/FMPhotoPickerImageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E6570FEB29F99F34DBEE38361116420 /* FMFiltersMenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMFiltersMenuView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/FMFiltersMenuView.swift; sourceTree = "<group>"; };
+		A06A0B3B2EDD0EFD87DA822EDDFD9686 /* Pods-FileManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FileManager-dummy.m"; sourceTree = "<group>"; };
+		A0E237C4DA245217C0055A0DBD2E5F94 /* FMPhotoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoViewController.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Viewer/FMPhotoViewController.swift; sourceTree = "<group>"; };
+		A1B1BB47A9089B67937B7CF87CCEE020 /* Pods-FileManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FileManager-umbrella.h"; sourceTree = "<group>"; };
+		A22476129D7EC51EEAAA12A52B112053 /* InsertableUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsertableUIView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Utilities/InsertableUIView.swift; sourceTree = "<group>"; };
+		A3C880DE167B473532E9CA9C9334F919 /* FMPhotoPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMPhotoPicker-Info.plist"; sourceTree = "<group>"; };
+		A8B8CB21E20EB643CDAA9D4EBC02D528 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		A9E3E698E69130533986A61FE5E7D0A8 /* KeychainAccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.debug.xcconfig; sourceTree = "<group>"; };
+		AE49FB5FFF5F2AB49AB13712971F06CA /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		B3E7C790C24A248F93C727C61208D944 /* FMCroppable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCroppable.swift; path = FMPhotoPicker/FMPhotoPicker/source/ImageEditor/Crop/FMCroppable.swift; sourceTree = "<group>"; };
+		B6DD1E2BE46D9AE42EF3594CCE423CDC /* FMZoomOutAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMZoomOutAnimationController.swift; path = "FMPhotoPicker/FMPhotoPicker/source/Animated Trasitioning/FMZoomOutAnimationController.swift"; sourceTree = "<group>"; };
+		BB5C56835612BAE58CBFE41A4E10AEB7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "FMPhotoPicker/FMPhotoPicker/source/Utilities/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		BBE6501E3D52227CC2AA0947737D5B3F /* FMCropBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropBackgroundView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/Crop/FMCropBackgroundView.swift; sourceTree = "<group>"; };
+		C0A3F355756E135592DB076ECC773DDA /* FMPhotoInteractionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoInteractionAnimator.swift; path = "FMPhotoPicker/FMPhotoPicker/source/Interaction Animator/FMPhotoInteractionAnimator.swift"; sourceTree = "<group>"; };
+		C25D2DB37F7025287F217649F73D6233 /* FMFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMFilter.swift; path = FMPhotoPicker/FMPhotoPicker/source/ImageEditor/Filter/FMFilter.swift; sourceTree = "<group>"; };
+		C2BD4007AA9719C522F460D0B4949053 /* FMCrop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCrop.swift; path = FMPhotoPicker/FMPhotoPicker/source/ImageEditor/Crop/FMCrop.swift; sourceTree = "<group>"; };
+		C532CD2D29038FECD5A9447F95E1613A /* FMPhotoPickerBatchSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoPickerBatchSelector.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Picker/FMPhotoPickerBatchSelector.swift; sourceTree = "<group>"; };
+		C6DC5BCB9F96FE1C868EE4F944F33627 /* Pods-FileManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FileManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		CFFA57CE3ED06FF46D2BF9CAD0CD8119 /* FMZoomInAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMZoomInAnimationController.swift; path = "FMPhotoPicker/FMPhotoPicker/source/Animated Trasitioning/FMZoomInAnimationController.swift"; sourceTree = "<group>"; };
+		D1F2D1C136C53D8EBF6C22355E31395F /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extension.swift"; path = "FMPhotoPicker/FMPhotoPicker/source/Utilities/TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		D30748B603C41ED6206F5B262E616357 /* FMPhotoPickerImageCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMPhotoPickerImageCollectionViewCell.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Picker/FMPhotoPickerImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D4DE7D8262A883B2257A40DA24749556 /* Pods-FileManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FileManager-Info.plist"; sourceTree = "<group>"; };
+		D5EA52B9111191CBF2EF4CEBE7133F29 /* FMScalingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMScalingImageView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Viewer/FMScalingImageView.swift; sourceTree = "<group>"; };
+		DB46EE672A2B0FA02E1041CC6F9802BC /* FMCropCropBoxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMCropCropBoxView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/Views/Crop/FMCropCropBoxView.swift; sourceTree = "<group>"; };
+		DFCC3AE49A497A7DAD7A2281B51E091E /* KeychainAccess-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainAccess-Info.plist"; sourceTree = "<group>"; };
+		E1E363C1016A17966A96BD4180638B92 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "FMPhotoPicker/FMPhotoPicker/source/Utilities/UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		E6436BA2373EF55B539A3F80D2EB254D /* FMFilterable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMFilterable.swift; path = FMPhotoPicker/FMPhotoPicker/source/ImageEditor/Filter/FMFilterable.swift; sourceTree = "<group>"; };
+		E7011AF8228A13669306DEC8320DD1A6 /* FMPhotoPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMPhotoPicker; path = FMPhotoPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCA2B9C35172F31550B5EF7FE0BD27C /* FMImageEditorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMImageEditorViewController.swift; path = FMPhotoPicker/FMPhotoPicker/source/Scene/Presenter/Editor/FMImageEditorViewController.swift; sourceTree = "<group>"; };
+		FCFB72738389032F38DE5BEEA66EC379 /* FMLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FMLoadingView.swift; path = FMPhotoPicker/FMPhotoPicker/source/Utilities/FMLoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FD999F6C218103FA53D08CD74FD7542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41158F5988CA671AD8D054B9D7552E9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61A2EC0AB6F1423BBB0D97DFA9CC1E1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE13D3FA75FDFB448DD60361E8EDD711 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C805BEDCFF32850FA207EBD3D16A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC2756DAE837D4AB7B1F71C34803863 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024FA291EBBE61557DAF9FF4C858D12D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0ABD8F59EA94C7187A57F65C031AB025 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		37464C3C2998236A4BB62C45AC4BC048 /* FMPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				9B42E2E273BA5C1D49E439379B7EFFC2 /* AVPlayer+Extension.swift */,
+				800E565A337D0C170B62B90EC97E4CCE /* Bundle+Extension.swift */,
+				1C59AF8B0804D7FE27CD6C2AB93B0181 /* Const.swift */,
+				01A6EC06A8A2CD7B9A3B7D919BA56FD1 /* FMAlertable.swift */,
+				C2BD4007AA9719C522F460D0B4949053 /* FMCrop.swift */,
+				BBE6501E3D52227CC2AA0947737D5B3F /* FMCropBackgroundView.swift */,
+				56F0AC38836AE51B3AC95EBB25A7454A /* FMCropCell.swift */,
+				16BA6633A3E78B125FB63B0321365D1E /* FMCropCropBoxCornersView.swift */,
+				DB46EE672A2B0FA02E1041CC6F9802BC /* FMCropCropBoxView.swift */,
+				4CEE8B6213E29F3ADFDD2C44CECBC0DE /* FMCropForegroundView.swift */,
+				338CA8A523DEDB495461879A322A0ADA /* FMCropMenuView.swift */,
+				B3E7C790C24A248F93C727C61208D944 /* FMCroppable.swift */,
+				24D29E0EC18855610F339DD687078146 /* FMCropScrollView.swift */,
+				16590965665F48F49B4390087672CBDC /* FMCropTranslucencyView.swift */,
+				2C30BEA6DEC2A7627FFE84CDA0B02BD9 /* FMCropView.swift */,
+				C25D2DB37F7025287F217649F73D6233 /* FMFilter.swift */,
+				E6436BA2373EF55B539A3F80D2EB254D /* FMFilterable.swift */,
+				4722B53C5C5010161B64E23855023CC0 /* FMFilterCell.swift */,
+				9E6570FEB29F99F34DBEE38361116420 /* FMFiltersMenuView.swift */,
+				8CE59E326FA952E572E1E180D67FA496 /* FMImageEditor.swift */,
+				EDCA2B9C35172F31550B5EF7FE0BD27C /* FMImageEditorViewController.swift */,
+				572734D53D29D0AFE499830F92258B16 /* FMImageViewController.swift */,
+				FCFB72738389032F38DE5BEEA66EC379 /* FMLoadingView.swift */,
+				7BD12A1FB0AF3D690C791CCC8C738325 /* FMPhotoAsset.swift */,
+				C0A3F355756E135592DB076ECC773DDA /* FMPhotoInteractionAnimator.swift */,
+				C532CD2D29038FECD5A9447F95E1613A /* FMPhotoPickerBatchSelector.swift */,
+				5B42F2099AD218A025CC30A24DBB464A /* FMPhotoPickerConfig.swift */,
+				D30748B603C41ED6206F5B262E616357 /* FMPhotoPickerImageCollectionViewCell.swift */,
+				9D89910FDC58E7E3D6582FA663F49607 /* FMPhotoPickerImageCollectionViewLayout.swift */,
+				91D0AFBEF6C560E4AEFD7F2E1E4B1451 /* FMPhotoPickerViewController.swift */,
+				5AC9F9C2D7B5DC12280BCB2F8E8D9953 /* FMPhotoPresenterViewController.swift */,
+				9BA4D8F12EF5D3CEF41C2D04809FA173 /* FMPhotosDataSource.swift */,
+				A0E237C4DA245217C0055A0DBD2E5F94 /* FMPhotoViewController.swift */,
+				05E141C31C595BA169E3A7BF89E32D6F /* FMPlaybackControlView.swift */,
+				20D755973C1BD886804B796AF16C47D9 /* FMPlaybackProgressThumbLayer.swift */,
+				6B6DFFA8A2A0DC29E07CF2F0776B166B /* FMPlaybackProgressTrackLayer.swift */,
+				2EEF460BE3EC4C133B579DCAADE66060 /* FMPlaybackProgressView.swift */,
+				77667F98F31180092346396373444C65 /* FMPresenterBottomView.swift */,
+				951966F1109D15673F68C83480C2C7D0 /* FMPresenterEditMenuView.swift */,
+				5DE0438C4DBD1941D91FF9ED89CF82DC /* FMPresenterTopView.swift */,
+				D5EA52B9111191CBF2EF4CEBE7133F29 /* FMScalingImageView.swift */,
+				51D039A1103EB0EDFC2628402ECE1D09 /* FMVideoViewController.swift */,
+				0B4A4E7540EEC95E2C530ECB099426C7 /* FMWarningView.swift */,
+				CFFA57CE3ED06FF46D2BF9CAD0CD8119 /* FMZoomInAnimationController.swift */,
+				B6DD1E2BE46D9AE42EF3594CCE423CDC /* FMZoomOutAnimationController.swift */,
+				10CB4C06FF18AFB0D3ECE1C3D4399142 /* Helper.swift */,
+				A22476129D7EC51EEAAA12A52B112053 /* InsertableUIView.swift */,
+				D1F2D1C136C53D8EBF6C22355E31395F /* TimeInterval+Extension.swift */,
+				BB5C56835612BAE58CBFE41A4E10AEB7 /* UIImage+Extension.swift */,
+				E1E363C1016A17966A96BD4180638B92 /* UIImage+Extensions.swift */,
+				5BABAE3FF78F4F3E2D72462038430B72 /* UIView+FMPhotoView.swift */,
+				024FA291EBBE61557DAF9FF4C858D12D /* Resources */,
+				7F96EFC5AC592A762F8901FE7FFD2180 /* Support Files */,
+			);
+			name = FMPhotoPicker;
+			path = FMPhotoPicker;
+			sourceTree = "<group>";
+		};
+		49C3EAC3FDA69D12E44E082C51716FA2 /* Pods-FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				79D4B0088FFD458C7C65D46F47489EC7 /* Pods-FileManager.modulemap */,
+				39ADFCE001104254F8E9CE7D17042561 /* Pods-FileManager-acknowledgements.markdown */,
+				C6DC5BCB9F96FE1C868EE4F944F33627 /* Pods-FileManager-acknowledgements.plist */,
+				A06A0B3B2EDD0EFD87DA822EDDFD9686 /* Pods-FileManager-dummy.m */,
+				26FC926045B51E01D3D937900451ADD5 /* Pods-FileManager-frameworks.sh */,
+				D4DE7D8262A883B2257A40DA24749556 /* Pods-FileManager-Info.plist */,
+				A1B1BB47A9089B67937B7CF87CCEE020 /* Pods-FileManager-umbrella.h */,
+				4E5C66EB3748E51B5B86886C84A345D0 /* Pods-FileManager.debug.xcconfig */,
+				06C4012E6E42E6E6F8D7782DC7D4AB3D /* Pods-FileManager.release.xcconfig */,
+			);
+			name = "Pods-FileManager";
+			path = "Target Support Files/Pods-FileManager";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		60FB80488AF0CB9EF18A1CC88B9D01A9 /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				AE49FB5FFF5F2AB49AB13712971F06CA /* Keychain.swift */,
+				6894AB874A8B8A1062D35BEDF1062A7C /* Support Files */,
+			);
+			name = KeychainAccess;
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
+		6894AB874A8B8A1062D35BEDF1062A7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				494DB870655D9EF39C530E42D48D7FD2 /* KeychainAccess.modulemap */,
+				925EEB82E8777178FD5A9694AFEA28C4 /* KeychainAccess-dummy.m */,
+				DFCC3AE49A497A7DAD7A2281B51E091E /* KeychainAccess-Info.plist */,
+				A8B8CB21E20EB643CDAA9D4EBC02D528 /* KeychainAccess-prefix.pch */,
+				80F3EDEAE705F9C34D52D70D5225F8CF /* KeychainAccess-umbrella.h */,
+				A9E3E698E69130533986A61FE5E7D0A8 /* KeychainAccess.debug.xcconfig */,
+				402B145538C2151F608B7576AA2C4FF6 /* KeychainAccess.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainAccess";
+			sourceTree = "<group>";
+		};
+		7F96EFC5AC592A762F8901FE7FFD2180 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77B21D32A590A69293A6FE22C811F4CE /* FMPhotoPicker.modulemap */,
+				1F681B7F421066FFAB8E819F17B1FA87 /* FMPhotoPicker-dummy.m */,
+				A3C880DE167B473532E9CA9C9334F919 /* FMPhotoPicker-Info.plist */,
+				2D21D8DFE258D9F0422F1CD00E39605B /* FMPhotoPicker-prefix.pch */,
+				19A3AD2498C47387FFD7C77EEB7DCC36 /* FMPhotoPicker-umbrella.h */,
+				61662741B888CCB527291D3A2E777403 /* FMPhotoPicker.debug.xcconfig */,
+				2BB4ADDF952E59BABEEDAEC2977E4CEA /* FMPhotoPicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMPhotoPicker";
+			sourceTree = "<group>";
+		};
+		851FEDBEF8FE7DBBBE056E0C1BEC20FB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49C3EAC3FDA69D12E44E082C51716FA2 /* Pods-FileManager */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		95CD4A4F73CC33094B406999F3F05353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7011AF8228A13669306DEC8320DD1A6 /* FMPhotoPicker */,
+				E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess */,
+				0DD056EB1F1DB6A138A1C9CD823AF562 /* Pods-FileManager */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B70542F50101AA9A8069497DFB4708 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37464C3C2998236A4BB62C45AC4BC048 /* FMPhotoPicker */,
+				60FB80488AF0CB9EF18A1CC88B9D01A9 /* KeychainAccess */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A9B70542F50101AA9A8069497DFB4708 /* Pods */,
+				95CD4A4F73CC33094B406999F3F05353 /* Products */,
+				851FEDBEF8FE7DBBBE056E0C1BEC20FB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6042610359E6014148C9D29F5D2C53F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEE4BF3246ED0DFC7840CE7F5956FA0 /* Pods-FileManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87888C9C21EEACE070D9FEEE09A3CB79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4D406DED6919789300B604A7E348F1 /* FMPhotoPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF75125526618A4F89C7DE0AA396B82A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF90BFF34BBAD8B2C7A6CE9641145561 /* KeychainAccess-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4503BDEA9CC43AE1232C239A05C56DF5 /* FMPhotoPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002DFF70B2D9602D71B62806A56CE39B /* Build configuration list for PBXNativeTarget "FMPhotoPicker" */;
+			buildPhases = (
+				87888C9C21EEACE070D9FEEE09A3CB79 /* Headers */,
+				9EAD17D2A898A8BCB1DE3EDAA41F8723 /* Sources */,
+				5FD999F6C218103FA53D08CD74FD7542 /* Frameworks */,
+				1074116465E82BD47FDD2CD6C6142629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMPhotoPicker;
+			productName = FMPhotoPicker;
+			productReference = E7011AF8228A13669306DEC8320DD1A6 /* FMPhotoPicker */;
+			productType = "com.apple.product-type.framework";
+		};
+		615C831BCE925ED486B225B87E44926D /* KeychainAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8186AABF55F555DDAD74F17BA7EC1698 /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
+			buildPhases = (
+				BF75125526618A4F89C7DE0AA396B82A /* Headers */,
+				3CA247B210AE409280F27D97CC981D9D /* Sources */,
+				61A2EC0AB6F1423BBB0D97DFA9CC1E1B /* Frameworks */,
+				57833CBC64D40DF1355638A2FC2ACC60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainAccess;
+			productName = KeychainAccess;
+			productReference = E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0A182C1CC1104695890C005F1E28C13 /* Pods-FileManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA3240FB09120E9A0E4E2B0B4CB2815 /* Build configuration list for PBXNativeTarget "Pods-FileManager" */;
+			buildPhases = (
+				6042610359E6014148C9D29F5D2C53F2 /* Headers */,
+				5737BCCEEC3E4F56D6E02C89B42CB86B /* Sources */,
+				B0C805BEDCFF32850FA207EBD3D16A24 /* Frameworks */,
+				18A6BB6C7E6FC03252E988CA31F55CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20D5280B98C9A25745BDD4D8E148FDD1 /* PBXTargetDependency */,
+				90097399769D41485E0A5014D3997165 /* PBXTargetDependency */,
+			);
+			name = "Pods-FileManager";
+			productName = Pods_FileManager;
+			productReference = 0DD056EB1F1DB6A138A1C9CD823AF562 /* Pods-FileManager */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 95CD4A4F73CC33094B406999F3F05353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4503BDEA9CC43AE1232C239A05C56DF5 /* FMPhotoPicker */,
+				615C831BCE925ED486B225B87E44926D /* KeychainAccess */,
+				D0A182C1CC1104695890C005F1E28C13 /* Pods-FileManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1074116465E82BD47FDD2CD6C6142629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9673D377C09BBED57B6DC1E68516AD1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A6BB6C7E6FC03252E988CA31F55CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57833CBC64D40DF1355638A2FC2ACC60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CA247B210AE409280F27D97CC981D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9022F02292EA5FB21AB5FFC27D05F8 /* Keychain.swift in Sources */,
+				EEA3892D8746DA47A2889A0717514533 /* KeychainAccess-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5737BCCEEC3E4F56D6E02C89B42CB86B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29AF96DC4317B96E0EB7B63C2750146 /* Pods-FileManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAD17D2A898A8BCB1DE3EDAA41F8723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128150C61101699688369C5FC7995174 /* AVPlayer+Extension.swift in Sources */,
+				CC8B3D9093C338E499552B028C8D6469 /* Bundle+Extension.swift in Sources */,
+				EEAC2B49681440E5E8598D32CE596FB7 /* Const.swift in Sources */,
+				32FF0FD61F9B7A9DEAC6F9EEF27C322D /* FMAlertable.swift in Sources */,
+				201256ED1F0E6930AB16281BE733789C /* FMCrop.swift in Sources */,
+				D21ED1DDE18FE3FEBD85691816907C91 /* FMCropBackgroundView.swift in Sources */,
+				878B3F9C99B5F69A4B3AE76805DFC68C /* FMCropCell.swift in Sources */,
+				E0D1F0AC5B5E73CE44C1116F86C2015B /* FMCropCropBoxCornersView.swift in Sources */,
+				5B6502A449107D12CA9CEE71E16C5D7F /* FMCropCropBoxView.swift in Sources */,
+				D1AE817E5C376D41D67416C224EF90C8 /* FMCropForegroundView.swift in Sources */,
+				B04A141C3537B2D3F46201565B2C2BDD /* FMCropMenuView.swift in Sources */,
+				7D7FE84B503FC580FD0E6AD58040F5F5 /* FMCroppable.swift in Sources */,
+				25248F676DDC5CABEBDCC2AE9614E1D7 /* FMCropScrollView.swift in Sources */,
+				29AF00A8343345FF0D9848BD1A640BF2 /* FMCropTranslucencyView.swift in Sources */,
+				93759C3C6AF9B322BEAC166695E9C9AA /* FMCropView.swift in Sources */,
+				C2183D4E04C8CEDA3B4E9854116E2E8C /* FMFilter.swift in Sources */,
+				31752D9AF32D77C03D660AFC97059EC2 /* FMFilterable.swift in Sources */,
+				049EF691686A610720880A4449794C3F /* FMFilterCell.swift in Sources */,
+				18A01103FE4A496D52DEBFB77AF49222 /* FMFiltersMenuView.swift in Sources */,
+				333B6115B96F7F26D3B10C1BC07B18FC /* FMImageEditor.swift in Sources */,
+				ED8118AB217FE0637F54A94140F5BBE9 /* FMImageEditorViewController.swift in Sources */,
+				0580BF80EF80F416C51AF44279B7E1B2 /* FMImageViewController.swift in Sources */,
+				7A21D0BB27C4B9EF5B36DBC56AFF4630 /* FMLoadingView.swift in Sources */,
+				D98382557B4F6E46F0F8B39496D89A9B /* FMPhotoAsset.swift in Sources */,
+				45EADF64219574AFD0EFD30FB6B59109 /* FMPhotoInteractionAnimator.swift in Sources */,
+				3B11BA026ED0CBC4743F457C2F5C3115 /* FMPhotoPicker-dummy.m in Sources */,
+				80B08DD213185798B65810D2A655CC73 /* FMPhotoPickerBatchSelector.swift in Sources */,
+				320BB1B9C15377130EDB16845EC99F4C /* FMPhotoPickerConfig.swift in Sources */,
+				2962CD83FAC5B77C0C8EDE08F5BB6DC2 /* FMPhotoPickerImageCollectionViewCell.swift in Sources */,
+				70E674AF6C82C2A58C5560C63C9F881E /* FMPhotoPickerImageCollectionViewLayout.swift in Sources */,
+				577B82C85AB5529E04783412845065DA /* FMPhotoPickerViewController.swift in Sources */,
+				FB4193842C3FAC9D1422E73F4C1D3CB6 /* FMPhotoPresenterViewController.swift in Sources */,
+				6C6A493C61082B57C868981C0876A7BB /* FMPhotosDataSource.swift in Sources */,
+				6126FB00D158C94A59B03EBD32F4218B /* FMPhotoViewController.swift in Sources */,
+				BC144D8C82C44C5F76897F9F639D2E33 /* FMPlaybackControlView.swift in Sources */,
+				AC55B69C9A9D727F41B072568763BCB1 /* FMPlaybackProgressThumbLayer.swift in Sources */,
+				D882C3F4050C6D1B88E746DE646CB905 /* FMPlaybackProgressTrackLayer.swift in Sources */,
+				96DC97F713048D3954A0972426EA8874 /* FMPlaybackProgressView.swift in Sources */,
+				8DC38303545FE44C248AF573EE736EDE /* FMPresenterBottomView.swift in Sources */,
+				9FCF9D8321BD0CC5A6FFBC3914A73145 /* FMPresenterEditMenuView.swift in Sources */,
+				D04C109BB8F94A538438A52D7B20E66A /* FMPresenterTopView.swift in Sources */,
+				99524B5B6A90853F65F244E5F77E22A6 /* FMScalingImageView.swift in Sources */,
+				8D50ABC244D9E77AE3BF8CA5D7DD7A48 /* FMVideoViewController.swift in Sources */,
+				4425F9C4B331B1A59613C18A89B44486 /* FMWarningView.swift in Sources */,
+				65B18EB9134E157198E42F753830233C /* FMZoomInAnimationController.swift in Sources */,
+				E617930E652445A5A73D972887D93400 /* FMZoomOutAnimationController.swift in Sources */,
+				42A8695EE5F3F450FE2E46B305061B55 /* Helper.swift in Sources */,
+				741685FABDDEAAE9EF2AD3C8EEFE3FDA /* InsertableUIView.swift in Sources */,
+				8A923BF8115D4524B84CAE09454C6918 /* TimeInterval+Extension.swift in Sources */,
+				1FC47519C8DC62E4894766EDBAB80233 /* UIImage+Extension.swift in Sources */,
+				84305DE56BEF0EC2A8817C9D721504B5 /* UIImage+Extensions.swift in Sources */,
+				4EE4CDE6852B689841911947793C8BF8 /* UIView+FMPhotoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20D5280B98C9A25745BDD4D8E148FDD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMPhotoPicker;
+			target = 4503BDEA9CC43AE1232C239A05C56DF5 /* FMPhotoPicker */;
+			targetProxy = 3395CAAEE5BDF9E042F9E5D9D0ABC4B3 /* PBXContainerItemProxy */;
+		};
+		90097399769D41485E0A5014D3997165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 615C831BCE925ED486B225B87E44926D /* KeychainAccess */;
+			targetProxy = 45E5517CC38017712DA3F4EAA9D4BB3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B0425AC794F7F2D9B103BDF08D1C15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402B145538C2151F608B7576AA2C4FF6 /* KeychainAccess.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				PRODUCT_MODULE_NAME = KeychainAccess;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5109587D730A9D0FB365E6173659C72C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB4ADDF952E59BABEEDAEC2977E4CEA /* FMPhotoPicker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMPhotoPicker/FMPhotoPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMPhotoPicker/FMPhotoPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMPhotoPicker/FMPhotoPicker.modulemap";
+				PRODUCT_MODULE_NAME = FMPhotoPicker;
+				PRODUCT_NAME = FMPhotoPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		607F03E4EC5255C7F72423C52E047F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5C66EB3748E51B5B86886C84A345D0 /* Pods-FileManager.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FileManager/Pods-FileManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FileManager/Pods-FileManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8E39B57F09E269952EB752B872860D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E3E698E69130533986A61FE5E7D0A8 /* KeychainAccess.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				PRODUCT_MODULE_NAME = KeychainAccess;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C8CAF2064B3CE9F378F9CE437CFA9CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C4012E6E42E6E6F8D7782DC7D4AB3D /* Pods-FileManager.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FileManager/Pods-FileManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FileManager/Pods-FileManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2FAE5ED9ABE0E16B3EB4A499C655CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61662741B888CCB527291D3A2E777403 /* FMPhotoPicker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FMPhotoPicker/FMPhotoPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMPhotoPicker/FMPhotoPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FMPhotoPicker/FMPhotoPicker.modulemap";
+				PRODUCT_MODULE_NAME = FMPhotoPicker;
+				PRODUCT_NAME = FMPhotoPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002DFF70B2D9602D71B62806A56CE39B /* Build configuration list for PBXNativeTarget "FMPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FAE5ED9ABE0E16B3EB4A499C655CAE /* Debug */,
+				5109587D730A9D0FB365E6173659C72C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8186AABF55F555DDAD74F17BA7EC1698 /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E39B57F09E269952EB752B872860D2C /* Debug */,
+				0B0425AC794F7F2D9B103BDF08D1C15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA3240FB09120E9A0E4E2B0B4CB2815 /* Build configuration list for PBXNativeTarget "Pods-FileManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607F03E4EC5255C7F72423C52E047F6B /* Debug */,
+				C8CAF2064B3CE9F378F9CE437CFA9CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

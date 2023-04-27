@@ -1,0 +1,6 @@
+framework module FMPhotoPicker {
+  umbrella header "FMPhotoPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
